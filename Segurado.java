@@ -61,6 +61,13 @@ public class Segurado {
     public String toString() {
         return nome;
     }
+    
+    //padrão creator
+    public planoSaude criarPlano(){
+        planoSaude p = new planoSaude();
+        return p;
+    }
+    
     //funções
     public static void menuAutoriza(){
         System.out.println("Tipo de autorização");
@@ -146,9 +153,10 @@ public class Segurado {
         o.setNome("Amil");   
         
         //plano de saude
-        planoSaude p = new planoSaude();
-        planoSaude p1 = new planoSaude();
-        planoSaude p2 = new planoSaude();
+        planoSaude p,p1,p2;
+        p= s.criarPlano();
+        p1=s.criarPlano();
+        p2=s.criarPlano();
         p.setNome("Dix");
         p1.setNome("LinkX");
         p2.setNome("Amil 300");
