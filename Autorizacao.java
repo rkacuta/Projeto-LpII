@@ -14,12 +14,12 @@ public class Autorizacao {
     private Local local;
     private Estado estado;
     private Segurado segurado;
-    private ItemDeProcedimentos listadeprocedimentos;
-    public Autorizacao(Local local,Estado estado,Segurado segurado,ItemDeProcedimentos listadeprocedimentos) {
+    private ArrayList<ItemDeProcedimentos> listadeprocedimentos;
+    public Autorizacao(Local local,Estado estado,Segurado segurado,ArrayList listadeprocedimentos) {
         this.local = local;
         this.estado = estado;
         this.segurado = segurado;
-        listadeprocedimentos = new ItemDeProcedimentos();
+        listadeprocedimentos = new ArrayList();
     }
     
     public Autorizacao(){
