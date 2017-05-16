@@ -13,7 +13,7 @@ import java.util.ArrayList;
  */
 public class Ambulatorial extends Procedimento{
     private ArrayList<Clinica> clinica;
-    public Ambulatorial(ArrayList clinica){
+    public Ambulatorial(Clinica clinica){
         this.clinica = new ArrayList();
     }
     
