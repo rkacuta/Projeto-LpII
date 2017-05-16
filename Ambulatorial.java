@@ -12,9 +12,9 @@ import java.util.ArrayList;
  * @author 31649033
  */
 public class Ambulatorial extends Procedimento{
-    private Clinica clinica;
-    public Ambulatorial(Clinica clinica){
-        this.clinica = new Clinica();
+    private ArrayList<Clinica> clinica;
+    public Ambulatorial(ArrayList clinica){
+        this.clinica = new ArrayList();
     }
     
     private String tipo;
