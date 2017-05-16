@@ -12,10 +12,10 @@ import java.util.ArrayList;
  * @author 31649033
  */
 public class Clinica extends Local {
-    private Ambulatorial ambulatorial;
+    private ArrayList<Ambulatorial> ambulatorial;
     
     public Clinica(Ambulatorial ambulatorial){
-        this.ambulatorial = new Ambulatorial();
+        this.ambulatorial = new ArrayList();
     }
     public Clinica() {
         this.clinica = new ArrayList();
