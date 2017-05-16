@@ -12,9 +12,9 @@ import java.util.ArrayList;
  * @author 31649033
  */
 public class Cirurgico extends Procedimento {
-    private Hospital hospital;
+    private ArrayList<Hospital> hospital;
     public Cirurgico(Hospital hospital){
-        this.hospital = new Hospital();
+        this.hospital = new ArrayList();
     }
     
     private String tipo;
