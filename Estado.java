@@ -4,15 +4,15 @@
  * and open the template in the editor.
  */
 package segurado;
-
+import java.util.ArrayList;
 /**
  *
  * @author 31649033
  */
 public class Estado {
-    private Autorizacao autorizacao ;
+    private ArrayList<Autorizacao> autorizacao ;
     public Estado(Autorizacao autorizacao){
-        this.autorizacao = new Autorizacao();
+        this.autorizacao = new ArrayList();
     }
     
     protected String estado;
