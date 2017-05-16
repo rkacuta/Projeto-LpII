@@ -12,9 +12,9 @@ import java.util.ArrayList;
  * @author 31649033
  */
 public class Hospital extends Local {
-    private Cirurgico cirurgico;
+    private ArrayList<Cirurgico> cirurgico;
     public Hospital(Cirurgico cirurgico){
-        this.cirurgico = new Cirurgico();
+        this.cirurgico = new ArrayList();
     }
     
     private ArrayList<Hospital> hospital;
