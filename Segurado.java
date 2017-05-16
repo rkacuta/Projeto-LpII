@@ -3,6 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+//Foi utilizado o padrão creator para instanciar objeto planoSaude no método criarPlano
+
 package segurado;
 
 
@@ -62,7 +65,7 @@ public class Segurado {
         return nome;
     }
     
-    //padrão creator
+    //padrão creator 
     public planoSaude criarPlano(){
         planoSaude p = new planoSaude();
         return p;
@@ -108,25 +111,7 @@ public class Segurado {
         }
         System.out.println("Escolha a opção");
     }
-    
-    public static void mostrarDados(Segurado s, planoSaude p,Autorizacao a,String pl,String es,
-                                    Autorizado e2,String t,ItemDeProcedimentos l2, ItemDeProcedimentos l,
-                                    ItemDeProcedimentos l1){
-        System.out.println("Nome: "+s.getNome());
-        System.out.println("CPF: "+s.getCpf());
-        System.out.println("Planos: "+p.getplanoSaude());
-        System.out.println("Data de Avaliação: "+a.getDataDaAvaliacao());
-        System.out.println("Plano utilizado: "+pl);
-        System.out.println("Estado: "+es);
-        if (es==e2.getEstado()){
-            System.out.println("Tipo escolhido: "+t);
-            System.out.println("Lista de instrumentos e métodos utilizados: "+l2.getItemdeprocedimentos());
-            System.out.println("Quantidade de injeção: "+l.getQuantidade());
-            System.out.println("Quantidade de gesso: "+l1.getQuantidade());
-            System.out.println("Número de autorização: "+p.getNumAutorizacao());
-        }
-        System.out.println("");
-    }
+   
     public static void main(String[] args) {
         Random rand = new Random();
         
@@ -1189,9 +1174,9 @@ public class Segurado {
                     break;
                 case 3:
                     System.out.println("Dados dos clientes: ");
-                    mostrarDados(s,p,a,pl,es,e2,t,ip2,ip,ip1);
-                    mostrarDados(s1,p1,a1,pl1,es1,e2,t1,ip3,ip2,ip3);
-                    mostrarDados(s2,p2,a2,pl2,es2,e2,t2,ip4,ip4,ip5);
+                    a.mostrarDados(s,p,a,pl,es,e2,t,ip2,ip,ip1);
+                    a.mostrarDados(s1,p1,a1,pl1,es1,e2,t1,ip3,ip2,ip3);
+                    a.mostrarDados(s2,p2,a2,pl2,es2,e2,t2,ip4,ip4,ip5);
                     break;
                 case 4:
                     System.out.println("Dados dos locais");
