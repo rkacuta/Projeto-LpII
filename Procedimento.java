@@ -5,16 +5,17 @@
  */
 package segurado;
 
+import java.util.ArrayList;
 /**
  *
  * @author 31649033
  */
 public class Procedimento {
-    private planoSaude planoSaude ;
-    private ItemDeProcedimentos ListaDeProcedimentos;
+    private ArrayList<planoSaude> planoSaude ;
+    private ArrayList<ItemDeProcedimentos> ListaDeProcedimentos;
     public Procedimento(planoSaude planoSaude, ItemDeProcedimentos ListaDeProcedimentos){
-        this.planoSaude = new planoSaude();
-        this.ListaDeProcedimentos = new ItemDeProcedimentos();
+        this.planoSaude = new ArrayList();
+        this.ListaDeProcedimentos = new ArrayList();
     }
     private String nome;
     private String tipo;
