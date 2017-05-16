@@ -12,13 +12,13 @@ import java.util.ArrayList;
  * @author 31649033
  */
 public class planoSaude {
-    private Segurado segurado;
+    private ArrayList<Segurado> segurado;
     private Operadora operadora;
-    private Procedimento procedimento ;
+    private ArrayList<Procedimento> procedimento ;
     public planoSaude(Segurado segurado,Operadora operadora,Procedimento procedimento){
-        this.segurado = new Segurado();
+        this.segurado = new ArrayList();
         this.operadora =operadora;
-        this.procedimento = new Procedimento();
+        this.procedimento = new ArrayList();
     }
     
     private long numAutorizacao;
