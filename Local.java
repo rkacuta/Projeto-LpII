@@ -4,15 +4,15 @@
  * and open the template in the editor.
  */
 package segurado;
-
+import java.util.ArrayList;
 /**
  *
  * @author 31649033
  */
 public class Local {
-    private Autorizacao autorizacao = new Autorizacao();
+    private ArrayList<Autorizacao> autorizacao ;
     public Local(Autorizacao autorizacao){
-        this.autorizacao = autorizacao;
+        this.autorizacao = new ArrayList();
     }
     
     private long CEP;
