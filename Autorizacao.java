@@ -41,5 +41,22 @@ public class Autorizacao {
         e.setEstado();
     }
 
-    
+    public void mostrarDados(Segurado s, planoSaude p,Autorizacao a,String pl,String es,
+                                    Autorizado e2,String t,ItemDeProcedimentos l2, ItemDeProcedimentos l,
+                                    ItemDeProcedimentos l1){
+        System.out.println("Nome: "+s.getNome());
+        System.out.println("CPF: "+s.getCpf());
+        System.out.println("Planos: "+p.getplanoSaude());
+        System.out.println("Data de Avaliação: "+a.getDataDaAvaliacao());
+        System.out.println("Plano utilizado: "+pl);
+        System.out.println("Estado: "+es);
+        if (es==e2.getEstado()){
+            System.out.println("Tipo escolhido: "+t);
+            System.out.println("Lista de instrumentos e métodos utilizados: "+l2.getItemdeprocedimentos());
+            System.out.println("Quantidade de injeção: "+l.getQuantidade());
+            System.out.println("Quantidade de gesso: "+l1.getQuantidade());
+            System.out.println("Número de autorização: "+p.getNumAutorizacao());
+        }
+        System.out.println("");
+    }
 }
