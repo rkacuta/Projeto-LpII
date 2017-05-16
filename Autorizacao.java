@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+//Uso do padrão controller para fazer as funções do caso de uso mostrar dados do cliente
 package segurado;
 
 /**
