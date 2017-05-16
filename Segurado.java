@@ -18,10 +18,10 @@ import java.util.Random;
  */
 public class Segurado {
     private planoSaude planoSaude;
-    private Autorizacao autorizacao ;
+    private ArrayList<Autorizacao> autorizacao ;
     public Segurado(planoSaude planoSaude, Autorizacao autorizacao) {
         this.planoSaude  = new planoSaude();
-        this.autorizacao = new Autorizacao();
+        this.autorizacao = new ArrayList();
     } 
     /**
      * @param args the command line arguments
